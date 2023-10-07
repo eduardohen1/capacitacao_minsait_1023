@@ -7,6 +7,8 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
 
 @Path("/pessoas")
+@Consumes("application/json")
+@Produces("application/json")
 public class PessoaResource {
 
     @POST
