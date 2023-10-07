@@ -4,7 +4,7 @@ quarkus:
   http:
     cors:
       ~: true
-      origins: http://localhost:4200,http://localhost:8080
+      origins: http://localhost:4200,http://localhost:8080,http://localhost:8081
       headers: accept, authorization, content-type, x-requested-with
       methods: GET, OPTIONS, POST, PUT, DELETE
   datasource:
