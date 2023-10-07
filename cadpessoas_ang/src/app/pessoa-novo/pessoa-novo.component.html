@@ -1,0 +1,9 @@
+<h1>Nova pessoa</h1>
+<form (submit)="onSubmit()">
+  <input [(ngModel)]="pessoa.nome" name="nome" placeholder="Nome"><br>
+  <input [(ngModel)]="pessoa.endereco" name="endereco" placeholder="Endereco"><br>
+  <input [(ngModel)]="pessoa.email" name="email" placeholder="E-mail"><br>
+  <input [(ngModel)]="pessoa.contato" name="contato" placeholder="Contato"><br>
+  <button type="submit">Gravar</button><br><br>
+</form>
+<button (click)="voltar()">Voltar</button>

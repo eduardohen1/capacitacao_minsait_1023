@@ -1,6 +1,12 @@
 greeting:
   message: "hello"
 quarkus:
+  http:
+    cors:
+      ~: true
+      origins: http://localhost:4200,http://localhost:8080
+      headers: accept, authorization, content-type, x-requested-with
+      methods: GET, OPTIONS, POST, PUT, DELETE
   datasource:
     db-king: postgresql
     username: postgres

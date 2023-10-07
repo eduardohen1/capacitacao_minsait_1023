@@ -1,0 +1,11 @@
+<h1>Pessoas</h1>
+<hr>
+<ul>
+  <li *ngFor="let pessoa of pessoas">
+    {{ pessoa.nome }} - {{ pessoa.email }}
+    <button (click)="editarPessoa(pessoa.id)">Editar</button> &nbsp;
+    <button (click)="excluirPessoa(pessoa.id)">Excluir</button>
+  </li>
+</ul>
+<button (click)="novaPessoa()">Nova Pessoa</button>
+
